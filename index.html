@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Djibril — Bibliothèque</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:#0a0a0a;color:#e5e5e5;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+    min-height:100vh;
+  }
+  .hero{
+    min-height:70vh;display:flex;align-items:center;justify-content:center;
+    text-align:center;padding:40px 20px;
+    background:radial-gradient(ellipse at bottom,#1a1a1a 0%,#0a0a0a 70%);
+  }
+  .hero h1{font-size:clamp(2rem,6vw,4rem);font-weight:800;letter-spacing:-1px;line-height:1.1}
+  .hero h1 span{background:linear-gradient(135deg,#f59e0b,#e85d2c);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p{font-size:1.15rem;color:#888;margin-top:16px;max-width:520px;line-height:1.6}
+  .hero .cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+  .hero .cta a{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:14px 32px;border-radius:10px;font-weight:600;font-size:1rem;
+    text-decoration:none;transition:all .2s;
+  }
+  .btn-primary{background:linear-gradient(135deg,#f59e0b,#e85d2c);color:#000}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(245,158,11,.3)}
+  .btn-secondary{background:#1a1a1a;color:#e5e5e5;border:1px solid #333}
+  .btn-secondary:hover{background:#222;border-color:#555}
+  .stats{display:flex;gap:40px;justify-content:center;margin-top:40px;flex-wrap:wrap}
+  .stat{text-align:center}
+  .stat .n{font-size:2rem;font-weight:800;background:linear-gradient(135deg,#f59e0b,#e85d2c);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .stat .l{font-size:.8rem;color:#666;text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
+  .categories{max-width:900px;margin:0 auto;padding:0 20px 60px}
+  .categories h2{font-size:1.5rem;margin-bottom:24px;color:#999}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+  .card{
+    background:#111;border:1px solid #222;border-radius:10px;padding:16px;
+    transition:all .2s;cursor:pointer;text-decoration:none;color:#e5e5e5;
+  }
+  .card:hover{background:#1a1a1a;border-color:#444;transform:translateY(-2px)}
+  .card .ico{font-size:1.8rem;margin-bottom:8px}
+  .card .name{font-weight:600;font-size:.95rem}
+  .card .count{color:#666;font-size:.8rem;margin-top:4px}
+  footer{text-align:center;padding:40px;color:#444;font-size:.85rem;border-top:1px solid #1a1a1a}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div>
+    <h1>Bibliothèque <span>Djibril</span></h1>
+    <p>Une collection de 106 livres en français — développement personnel, marketing, vente, économie et plus. Télécharge ce que tu veux.</p>
+    <div class="cta">
+      <a class="btn-primary" href="#">📥 Tout télécharger (ZIP)</a>
+      <a class="btn-secondary" href="bibliotheque.html">📚 Parcourir la bibliothèque</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">106</div><div class="l">Livres</div></div>
+      <div class="stat"><div class="n">6</div><div class="l">Catégories</div></div>
+      <div class="stat"><div class="n">329</div><div class="l">Mo</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="categories">
+  <h2>📂 Catégories</h2>
+  <div class="grid">
+    <a class="card" href="#"><div class="ico">🧬</div><div class="name">Biologie & Évolution</div><div class="count">3 livres</div></a>
+    <a class="card" href="#"><div class="ico">🧠</div><div class="name">Développement Personnel</div><div class="count">32 livres</div></a>
+    <a class="card" href="#"><div class="ico">💰</div><div class="name">Économie</div><div class="count">8 livres</div></a>
+    <a class="card" href="#"><div class="ico">📢</div><div class="name">Marketing</div><div class="count">45 livres</div></a>
+    <a class="card" href="#"><div class="ico">💬</div><div class="name">Rhétorique</div><div class="count">4 livres</div></a>
+    <a class="card" href="#"><div class="ico">🤝</div><div class="name">Vente</div><div class="count">14 livres</div></a>
+  </div>
+</div>
+
+<footer>
+  Bibliothèque Djibril — Partage de connaissance
+</footer>
+
+</body>
+</html>
