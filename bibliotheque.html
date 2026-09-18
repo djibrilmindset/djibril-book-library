@@ -129,6 +129,15 @@
     .container { padding: 20px 12px; }
     .book-item { padding: 8px 12px; }
   }
+
+  .cover-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:18px}
+  .cover-card{display:block;text-decoration:none;color:#e5e5e5;background:#111;border:1px solid #222;
+    border-radius:12px;padding:12px;transition:all .2s;text-align:center}
+  .cover-card:hover{background:#1a1a1a;border-color:#f59e0b;transform:translateY(-3px)}
+  .cover-card img{width:100%;border-radius:6px;display:block;margin-bottom:10px}
+  .cover-name{display:block;font-weight:600;font-size:.85rem;line-height:1.35;min-height:2.7em}
+  .cover-cta{display:block;margin-top:8px;font-size:.75rem;color:#f59e0b}
+  .cat-desc{color:#999;margin:-8px 0 20px;font-size:.95rem;max-width:640px}
 </style>
 </head>
 <body>
@@ -142,103 +151,117 @@
 </header>
 
 
+<div class="category" style="border:1px solid #f59e0b55">
+  <div class="category-header"><h2>🎓 Formation — Ordre de lecture</h2><span class="badge">par priorité</span></div>
+  <p class="cat-desc">Les livres les plus importants à lire, dans l'ordre qui construit une compétence. Chaque livre y porte son statut vérifié : PRÊT, SCAN ORIGINAL ou EN RÉPARATION. <a href="ordre-de-lecture.html" style="color:#f59e0b">Ouvrir l'ordre de lecture →</a></p>
+</div>
 <div class="category" id="cat-live-reset-ultra">
   <div class="category-header">
     <h2>⚡ Live Reset Ultra</h2>
-    <span class="badge">15 livres</span>
+    <span class="badge">20 livres</span>
   </div>
-  <p class="cat-desc">Les livres finaux, complets et vérifiés — la sélection à utiliser.</p>
-  <div class="book-list">
-    <div class="book-item">
-      <span class="num">1</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Buyology - Vérités et mensonges sur ce qui nous fait acheter (Martin Lindstrom).epub" target="_blank">Buyology - Vérités et mensonges sur ce qui nous fait acheter (Martin Lindstrom)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">2</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/C&#x27;est ça le marketing (Seth Godin).epub" target="_blank">C&#x27;est ça le marketing (Seth Godin)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">3</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Comment se faire des amis (Dale Carnegie).epub" target="_blank">Comment se faire des amis (Dale Carnegie)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">4</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Contagious - Pourquoi les choses se propagent (Jonah Berger).epub" target="_blank">Contagious - Pourquoi les choses se propagent (Jonah Berger)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">5</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Different (Youngme Moon).epub" target="_blank">Different (Youngme Moon)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">6</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Hooked - Comment créer des produits qui forment des habitudes (Nir Eyal).epub" target="_blank">Hooked - Comment créer des produits qui forment des habitudes (Nir Eyal)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">7</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Influence et manipulation (Robert Cialdini).epub" target="_blank">Influence et manipulation (Robert Cialdini)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">8</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/L&#x27;Écriture de Non-Fiction (Walter S. Campbell).epub" target="_blank">L&#x27;Écriture de Non-Fiction (Walter S. Campbell)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">9</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/La Violence et le Sacré (René Girard).epub" target="_blank">La Violence et le Sacré (René Girard)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">10</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Luxe Oblige - Les règles de l&#x27;art du luxe (Kapferer et Bastien).epub" target="_blank">Luxe Oblige - Les règles de l&#x27;art du luxe (Kapferer et Bastien)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">11</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Made to Stick - Pourquoi certaines idées survivent (Chip et Dan Heath).epub" target="_blank">Made to Stick - Pourquoi certaines idées survivent (Chip et Dan Heath)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">12</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Mensonge romantique et vérité romanesque (René Girard).epub" target="_blank">Mensonge romantique et vérité romanesque (René Girard)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">13</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Principles - Vie et travail (Ray Dalio).epub" target="_blank">Principles - Vie et travail (Ray Dalio)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">14</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Pré-suasion (Robert Cialdini).epub" target="_blank">Pré-suasion (Robert Cialdini)</a>
-      <span class="ext">epub</span>
-    </div>
-    <div class="book-item">
-      <span class="num">15</span>
-      <span class="icon">📄</span>
-      <a href="books/Live Reset Ultra/Traffic Secrets (Russell Brunson).epub" target="_blank">Traffic Secrets (Russell Brunson)</a>
-      <span class="ext">epub</span>
-    </div>
+  <p class="cat-desc"><strong>La sélection finale</strong> — livres complets, intégralement en français et vérifiés. Clique sur une couverture pour télécharger l'EPUB.</p>
+  <div class="cover-grid">
+    <a class="cover-card" href="books/Live Reset Ultra/Buyology - Vérités et mensonges sur ce qui nous fait acheter (Martin Lindstrom).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Buyology - Vérités et mensonges sur ce qui nous fait acheter (Martin Lindstrom).png" alt="Buyology - Vérités et mensonges sur ce qui nous fait acheter (Martin Lindstrom)" loading="lazy">
+      <span class="cover-name">Buyology - Vérités et mensonges sur ce qui nous fait acheter (Martin Lindstrom)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/C&#x27;est ça le marketing (Seth Godin).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/C&#x27;est ça le marketing (Seth Godin).png" alt="C&#x27;est ça le marketing (Seth Godin)" loading="lazy">
+      <span class="cover-name">C&#x27;est ça le marketing (Seth Godin)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Comment se faire des amis (Dale Carnegie).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Comment se faire des amis (Dale Carnegie).png" alt="Comment se faire des amis (Dale Carnegie)" loading="lazy">
+      <span class="cover-name">Comment se faire des amis (Dale Carnegie)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Contagious - Pourquoi les choses se propagent (Jonah Berger).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Contagious - Pourquoi les choses se propagent (Jonah Berger).png" alt="Contagious - Pourquoi les choses se propagent (Jonah Berger)" loading="lazy">
+      <span class="cover-name">Contagious - Pourquoi les choses se propagent (Jonah Berger)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Different (Youngme Moon).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Different (Youngme Moon).png" alt="Different (Youngme Moon)" loading="lazy">
+      <span class="cover-name">Different (Youngme Moon)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/DotCom Secrets (Russell Brunson).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/DotCom Secrets (Russell Brunson).png" alt="DotCom Secrets (Russell Brunson)" loading="lazy">
+      <span class="cover-name">DotCom Secrets (Russell Brunson)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Great Leads - Les six meilleures façons de commencer un message de vente (Masterson et Forde).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Great Leads - Les six meilleures façons de commencer un message de vente (Masterson et Forde).png" alt="Great Leads - Les six meilleures façons de commencer un message de vente (Masterson et Forde)" loading="lazy">
+      <span class="cover-name">Great Leads - Les six meilleures façons de commencer un message de vente (Masterson et Forde)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Hooked - Comment créer des produits qui forment des habitudes (Nir Eyal).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Hooked - Comment créer des produits qui forment des habitudes (Nir Eyal).png" alt="Hooked - Comment créer des produits qui forment des habitudes (Nir Eyal)" loading="lazy">
+      <span class="cover-name">Hooked - Comment créer des produits qui forment des habitudes (Nir Eyal)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Influence et manipulation (Robert Cialdini).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Influence et manipulation (Robert Cialdini).png" alt="Influence et manipulation (Robert Cialdini)" loading="lazy">
+      <span class="cover-name">Influence et manipulation (Robert Cialdini)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/L&#x27;Écriture de Non-Fiction (Walter S. Campbell).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/L&#x27;Écriture de Non-Fiction (Walter S. Campbell).png" alt="L&#x27;Écriture de Non-Fiction (Walter S. Campbell)" loading="lazy">
+      <span class="cover-name">L&#x27;Écriture de Non-Fiction (Walter S. Campbell)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/La Violence et le Sacré (René Girard).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/La Violence et le Sacré (René Girard).png" alt="La Violence et le Sacré (René Girard)" loading="lazy">
+      <span class="cover-name">La Violence et le Sacré (René Girard)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Le Copywriter de la Rupture 2.0 - Guide de terrain d&#x27;Eugene Schwartz.epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Le Copywriter de la Rupture 2.0 - Guide de terrain d&#x27;Eugene Schwartz.png" alt="Le Copywriter de la Rupture 2.0 - Guide de terrain d&#x27;Eugene Schwartz" loading="lazy">
+      <span class="cover-name">Le Copywriter de la Rupture 2.0 - Guide de terrain d&#x27;Eugene Schwartz</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Luxe Oblige - Les règles de l&#x27;art du luxe (Kapferer et Bastien).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Luxe Oblige - Les règles de l&#x27;art du luxe (Kapferer et Bastien).png" alt="Luxe Oblige - Les règles de l&#x27;art du luxe (Kapferer et Bastien)" loading="lazy">
+      <span class="cover-name">Luxe Oblige - Les règles de l&#x27;art du luxe (Kapferer et Bastien)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Made to Stick - Pourquoi certaines idées survivent (Chip et Dan Heath).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Made to Stick - Pourquoi certaines idées survivent (Chip et Dan Heath).png" alt="Made to Stick - Pourquoi certaines idées survivent (Chip et Dan Heath)" loading="lazy">
+      <span class="cover-name">Made to Stick - Pourquoi certaines idées survivent (Chip et Dan Heath)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Mensonge romantique et vérité romanesque (René Girard).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Mensonge romantique et vérité romanesque (René Girard).png" alt="Mensonge romantique et vérité romanesque (René Girard)" loading="lazy">
+      <span class="cover-name">Mensonge romantique et vérité romanesque (René Girard)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Positioning - La bataille pour votre esprit (Ries et Trout).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Positioning - La bataille pour votre esprit (Ries et Trout).png" alt="Positioning - La bataille pour votre esprit (Ries et Trout)" loading="lazy">
+      <span class="cover-name">Positioning - La bataille pour votre esprit (Ries et Trout)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Principles - Vie et travail (Ray Dalio).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Principles - Vie et travail (Ray Dalio).png" alt="Principles - Vie et travail (Ray Dalio)" loading="lazy">
+      <span class="cover-name">Principles - Vie et travail (Ray Dalio)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Pré-suasion (Robert Cialdini).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Pré-suasion (Robert Cialdini).png" alt="Pré-suasion (Robert Cialdini)" loading="lazy">
+      <span class="cover-name">Pré-suasion (Robert Cialdini)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Scientific Advertising - La publicité scientifique (Claude Hopkins).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Scientific Advertising - La publicité scientifique (Claude Hopkins).png" alt="Scientific Advertising - La publicité scientifique (Claude Hopkins)" loading="lazy">
+      <span class="cover-name">Scientific Advertising - La publicité scientifique (Claude Hopkins)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
+    <a class="cover-card" href="books/Live Reset Ultra/Traffic Secrets (Russell Brunson).epub" target="_blank">
+      <img src="books/Live Reset Ultra/_couvertures/Traffic Secrets (Russell Brunson).png" alt="Traffic Secrets (Russell Brunson)" loading="lazy">
+      <span class="cover-name">Traffic Secrets (Russell Brunson)</span>
+      <span class="cover-cta">📄 Télécharger l'EPUB</span>
+    </a>
   </div>
 </div>
 <div class="category" id="cat-biologie">
